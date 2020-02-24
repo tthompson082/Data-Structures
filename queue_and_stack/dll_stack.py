@@ -8,6 +8,7 @@ class Stack:
     def __init__(self):
         self.size = 0
         # Why is our DLL a good choice to store our elements?
+        # It allows for dynamic sizing/an array has to know its size before it is created or reallocate memory as it grows.
         # self.storage = ?
         self.storage = DoublyLinkedList()
 
@@ -23,3 +24,5 @@ class Stack:
 
     def len(self):
         return self.storage.length
+
+# A stack is a collection of objects that follows the Last In First Out (LIFO) for inserting and deleting objects. So users can only access the most recently inserted object (the Head).
